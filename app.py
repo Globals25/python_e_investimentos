@@ -9,7 +9,7 @@ from streamlit_extras.grid import grid
 
 def build_sidebar():
     # Carrega a imagem da logo desejada
-    # st.image("logo-ptfgrupo-lp-principal.webp")
+    st.image("logo-ptfgrupo-lp-principal.webp")
     
     # Faz a leitura das empresas listadas na bolda no arquivo csv
     ticker_list = pd.read_csv("acoes-listadas-b3.csv", 
@@ -72,7 +72,7 @@ def build_main(tickers, prices):
         c.subheader(t, divider = "red")
         colA, colB, colC = c.columns(3)
         if t == "Portfolio":
-            colA.image("portfolio.png", width = 85)
+            colA.image("images/portfolio.png", width = 85)
         else:
             colA.image(f"https://raw.githubusercontent.com/thefintz/icones-b3/main/icones/{t}.png", width = 85)
         
