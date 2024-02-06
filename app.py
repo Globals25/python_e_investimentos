@@ -9,7 +9,7 @@ from streamlit_extras.grid import grid
 
 def build_sidebar():
     # Carrega a imagem da logo desejada
-    st.image("logo-ptfgrupo-lp-principal.webp")
+    #st.image("")
     
     # Faz a leitura das empresas listadas na bolda no arquivo csv
     ticker_list = pd.read_csv("acoes-listadas-b3.csv", 
